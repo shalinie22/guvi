@@ -1,0 +1,39 @@
+To find the EVEN and ODD list separately and its sum separately
+# declaring the lists 
+all=[]
+e=[]
+o=[]
+ne=[]
+no=[]
+# get the list from the user  
+l=int(input("enter the number"))
+se=0
+so=0
+for i in range (0,l):
+  s=int(input("enter the no :"))
+  all.append(s)
+  if(s%2==0):
+  #add the even numbers to the even list
+    e.append(s)
+    # sum of the even numbers
+    se+=s
+  else:
+  #add the odd numbers to the odd list
+    o.append(s)
+    #sum of the odd numbers
+    so+=s
+# print the output 
+print("full list ",all)
+print("even number list : ",e)
+print("odd number list : ",o)
+#add the even number's sum to the list 
+print("even number's sum : ",se)
+print("odd number's sum : ",so)
+#add the even number's sum to the list 
+ne.append(se)
+#add the odd number's sum to the list
+no.append(so)
+#print the even number's sum list
+print(" even number's sum list : ",ne)
+#print the odd number's sum list
+print(" odd number's sum list : ",no)
