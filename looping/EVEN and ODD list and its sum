@@ -1,4 +1,4 @@
-To find the EVEN and ODD list separately and its sum separately
+#To find the EVEN and ODD list separately and its sum separately
 # declaring the lists 
 all=[]
 e=[]
