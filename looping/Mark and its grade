@@ -1,0 +1,17 @@
+#TO FIND THE GRADE OF THE MARK 
+#get the mark from the user 
+m=int(input("enter the mark : "))
+#conditions for the mark to be satisfied
+if(m>=95):
+#print its corresponding grade 
+  print("grade A")
+elif(m>=90 and m<=94):
+  print("grade B")
+elif(m>=70 and m<=89):
+  print("grade C")  
+elif(m>=50 and m<=69):
+  print("grade D")
+elif(m>=30 and m<=49):
+  print("grade E")
+elif(m<=30):
+  print("grade f")
