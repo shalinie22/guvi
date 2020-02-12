@@ -1,0 +1,8 @@
+MULTIPLICATION TABLE FROM 1 TO 10 
+
+# get the input from the user
+n=int(input("enter no:"))
+for i in range (1,11):
+  m=i*n
+  # print the output 
+  print(n,"*",i,"=",m)
