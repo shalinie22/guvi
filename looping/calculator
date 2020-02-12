@@ -1,0 +1,21 @@
+#TO CREATE A CALCULATOR WITH SIX OPERATIONS 
+#get the 1st number from the user
+n1=int(input("enter the number : "))
+#get the 2nd number from the user
+n2=int(input("enter the number : "))
+#get the choice from the user
+ch=int(input("enter the choice : "))
+#conditions for which the choice to be satisfied
+if(ch==1):
+#print the operation of the two numbers
+  print("ADDITION = ",n1+n2)
+elif(ch==2):
+  print("SUBTRACTION = ",n1-n2)
+elif(ch==3):
+  print("MULTIPLICATION = ",n1*n2)
+elif(ch==4):
+  print("MODULO = ",n1%n2)
+elif(ch==5):
+  print("DIVISION = ",n1/n2)
+elif(ch==6):
+  print("EXPONENTIAL = ",n1**n2)
