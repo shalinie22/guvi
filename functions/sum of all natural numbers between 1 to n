@@ -1,0 +1,12 @@
+#to find sum of all natural numbers between 1 to n.
+#function declaration
+def sum_of_nat_num(n):
+  s=0
+  for i in range (0,n):
+    s+=i
+  return (s)
+  #get the number from the user
+n=int(input("enter the number :"))
+#call the function
+a=sum_of_nat_num(n)
+print(a)
