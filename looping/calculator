@@ -1,8 +1,8 @@
 #TO CREATE A CALCULATOR WITH SIX OPERATIONS 
 #get the 1st number from the user
-n1=int(input("enter the number : "))
+n1=float(input("enter the number : "))
 #get the 2nd number from the user
-n2=int(input("enter the number : "))
+n2=float(input("enter the number : "))
 print("ADDITION = 1")
 print("SUBTRACTION = 2")
 print("MULTIPLICATION = 3")
@@ -10,18 +10,32 @@ print("MODULO = 4")
 print("DIVITION = 5")
 print("POWER = 6")
 #get the choice from the user
-ch=int(input("enter the choice : "))
+p=float(input("enter the choice : "))
+ch=round(p)
 #conditions for which the choice to be satisfied
 if(ch==1):
 #print the operation of the two numbers
-  print("ADDITION = ",n1+n2)
+  print(" the value of ",(n1),"and",(n2),"is ",(n1+n2))
 elif(ch==2):
-  print("SUBTRACTION = ",n1-n2)
+  print(" the value of ",(n1),"and",(n2),"is",(n1-n2))
 elif(ch==3):
-  print("MULTIPLICATION = ",n1*n2)
+  print(" the value of ",n1,"and",n2,"is ",n1*n2)
 elif(ch==4):
-  print("MODULO = ",n1%n2)
+  if(n2==n1):
+    print(" the value of ",n1,"and",n2,"is 1 ")
+  elif(n2!=0 and n1!=0):
+    print(" the value of ",n1,"and",n2,"is",n1%n2)  
+  elif(n2==0):
+    print (" the value of ",n1,"and",n2,"is infinity ")
 elif(ch==5):
-  print("DIVISION = ",n1/n2)
+  print(" the value of ",n1,"and",n2,"is",n1/n2)
+  if(n2==n1):
+    print(" the value of ",n1,"and",n2,"is 1 ")
+  elif(n2!=0 and n1!=0):
+    print(" the value of ",n1,"and",n2,"is",n1/n2)  
+  elif(n2==0):
+    print(" the value of ",n1,"and",n2,"is infinity ")
 elif(ch==6):
   print("POWER = ",n1**n2)
+else:
+  print("invalid")  
