@@ -3,6 +3,12 @@
 n1=int(input("enter the number : "))
 #get the 2nd number from the user
 n2=int(input("enter the number : "))
+print("ADDITION = 1")
+print("SUBTRACTION = 2")
+print("MULTIPLICATION = 3")
+print("MODULO = 4")
+print("DIVITION = 5")
+print("POWER = 6")
 #get the choice from the user
 ch=int(input("enter the choice : "))
 #conditions for which the choice to be satisfied
@@ -18,4 +24,4 @@ elif(ch==4):
 elif(ch==5):
   print("DIVISION = ",n1/n2)
 elif(ch==6):
-  print("EXPONENTIAL = ",n1**n2)
+  print("POWER = ",n1**n2)
