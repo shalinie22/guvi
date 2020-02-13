@@ -9,7 +9,7 @@ for i in range (1,n):
 #get the list of numbers from the user
   a=int(input("enter : "))
   if(a>1):
-    for j in range (2,a//2+1):
+    for i in range (2,a//2+1):
       if((a%i)==0):
       #add the non prime numbers to a list 
         np.append(a)
