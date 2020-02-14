@@ -1,13 +1,13 @@
 #to calculate product of digits of a number.
 # function declaration
-def sod(n):
-    s=0
+def pod(n):
+    s=1
     while(n!=0):
         r=n%10
         s*=r
-        n=n/10
+        n=n//10
     return(s)
  #get the input from the user   
 n=int(input("enter the number"))
-t=sod(n)
+t=pod(n)
 print(t)
