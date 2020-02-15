@@ -11,4 +11,5 @@ def equilateral_triangle(s):
 s=int(input())
 #call the function 
 r=equilateral_triangle(s)
-print(r)
+e=round(r,2)
+print(e)
