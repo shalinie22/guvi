@@ -3,8 +3,7 @@
 def tri(a,b):
 #formula for area
     t=(a*b)/2
-    r=round(t)
-    return r
+    return t
 #get the input from the user
-a,b=list(map(float,input().split()))
+a,b=list(map(int,input().split()))
 print(tri(a,b))
