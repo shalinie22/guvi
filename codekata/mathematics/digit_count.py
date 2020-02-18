@@ -1,6 +1,6 @@
 #Count the number of digits of a given number N
 #function to find the number of digits
-def dig(n)
+def dig(n):
 #initialize c to zero
     c=0
 #loop to count the digits
