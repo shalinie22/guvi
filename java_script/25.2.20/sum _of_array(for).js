@@ -1,9 +1,6 @@
 #sum of array
-var a=[1,34,56,23,576];
-var s=0;
-for(var i=0;i<a.length;i++)
-{
-  s+=a[i];
-}
+var as=[12,34,5,6,2,56,6,2,1];
+var s=as.reduce(function(a,c)
+               {
+    return a+c;});
 console.log(s);
-  
