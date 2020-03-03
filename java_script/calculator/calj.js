@@ -1,21 +1,21 @@
-document.getElementById("1").addEventListener("click", doSomething);
-document.getElementById("2").addEventListener("click", doSomething);
-document.getElementById("3").addEventListener("click", doSomething);
-document.getElementById("4").addEventListener("click", doSomething);
-document.getElementById("5").addEventListener("click", doSomething);
-document.getElementById("6").addEventListener("click", doSomething);
-document.getElementById("7").addEventListener("click", doSomething);
-document.getElementById("8").addEventListener("click", doSomething);
-document.getElementById("9").addEventListener("click", doSomething);
-document.getElementById("0").addEventListener("click", doSomething);
-document.getElementById("*").addEventListener("click", doSomething);
-document.getElementById("/").addEventListener("click", doSomething);
-document.getElementById("+").addEventListener("click", doSomething);
-document.getElementById("-").addEventListener("click", doSomething);
-document.getElementById("c").addEventListener("click", clr);
+document.getElementById("1").addEventListener("click", p);
+document.getElementById("2").addEventListener("click", p);
+document.getElementById("3").addEventListener("click", p);
+document.getElementById("4").addEventListener("click", p);
+document.getElementById("5").addEventListener("click", p);
+document.getElementById("6").addEventListener("click", p);
+document.getElementById("7").addEventListener("click", p);
+document.getElementById("8").addEventListener("click", p);
+document.getElementById("9").addEventListener("click", p);
+document.getElementById("0").addEventListener("click", p);
+document.getElementById("*").addEventListener("click", p);
+document.getElementById("/").addEventListener("click", p);
+document.getElementById("+").addEventListener("click", p);
+document.getElementById("-").addEventListener("click", p);
+document.getElementById("c").addEventListener("click", clear);
 document.getElementById("=").addEventListener("click", result);
 
-function doSomething(){
+function p(){
     var val=this.value;
     document.getElementById("ans").value+=val;
 }
@@ -26,6 +26,7 @@ function result(){
     document.getElementById("ans").value=y;
 }
 
-function clr(){
+function clear(){
     document.getElementById("ans").value="";
 }
+
