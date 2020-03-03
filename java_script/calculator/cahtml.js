@@ -1,0 +1,34 @@
+<html>
+<body>
+<div class = title >Calculator</div>
+<table border="1">
+<tr><td colspan="4"><input type="text" id="ans"></tr>
+<tr>
+    <td><input type="button" id="1" value="1" ></td>
+    <td><input type="button" id="2" value="2" ></td>
+    <td><input type="button" id="3" value="3" ></td>
+    <td><input type="button" id="+" value="+" ></td>
+</tr>
+<tr>
+    
+    <td><input type="button" id="4" value="4" ></td>
+    <td><input type="button" id="5" value="5" ></td>
+    <td><input type="button" id="6" value="6" ></td>
+    <td><input type="button" id="-" value="-" ></td>
+</tr>
+<tr>
+    <td><input type="button" id="7" value="7" ></td>
+    <td><input type="button" id="8" value="8" ></td>
+    <td><input type="button" id="9" value="9" ></td>
+    <td><input type="button" id="/" value="/" ></td>
+<tr>
+    <td><input type="button" id="c" value="c" ></td>
+    <td><input type="button" id="0" value="0" ></td>
+    <td><input type="button" id="=" value="=" ></td>
+    <td><input type="button" id="*" value="*" ></td>
+</tr>
+</table>
+<script src="cal.js">
+</script>
+</body>
+</html>
