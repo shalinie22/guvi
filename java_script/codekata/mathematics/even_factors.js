@@ -7,37 +7,24 @@ inp.on("line",(data)=>{
 });
 inp.on("close",()=>{
     var b=parseInt(a[0]);
-    var s=[],c=0;
-    for(var i=1;i<=b;i++)
+    var s=[];
+    
+    for(var i=2;i<=b;i+=2)
     {
     if(b%i==0)
     {
-        if(i%2==0)
-        {
-            s.push(i);
-            c+=1;
-        }
+        s.push(i);
         
     }
     }
-    su='';
-    for(var i=0;i<s.length;i++){
-        if(i<s.length)
-        {
-        su+=s[i]+' ';
-        }
-        else
-        {
-          su+=s[i]+'';  
-        }
-    }
-    if(c==0)
+    
+    if(s.length>0)
     {
-        console.log("-1");
+        console.log(s.join(" "));
     }
     else
     {
-        console.log(su);
+        console.log("-1");
     }
     
 });
