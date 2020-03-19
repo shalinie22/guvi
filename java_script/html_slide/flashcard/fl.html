@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="pf.css">
+	<style>#a1
+		{
+		position: relative;
+		left:25px;
+		width: 11%;
+		height: 25px;
+		background: white;
+		border-style:solid;
+		border-color: #ff9900;
+		}
+		.ques
+		{
+		position: relative;
+		left:25px;
+		padding-left: 35px;
+		width: 500px;
+		height: 370px;
+		background: white;
+		border-style:solid;
+		border-color: #ff9900;
+		}
+		#q
+		{
+		width: 85%;
+		height: 35px;
+		border-color:green;
+		}
+		#ans
+		{
+		width: 85%;
+		height: 35px;
+		border-color:blue ;
+		}
+		.box{
+			border-style: solid;
+  border-color: coral;
+  color:black;
+  padding: 25px 20px;
+  height:15px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+		
+		#a3
+		{   position:absolute;
+		width: 41%;
+		height: 85px;
+		background: white;
+		border-style:solid;
+		border-color: #ff9900;
+		}</style>
+<body id='body'>
+<script src="fl.js">
+</script>
+<h1>Flashcards</h1>
+<div class="box">
+	<p1>Add Question</p1>
+</div>
+<br>
+<br>
+<div class="ques">
+	<h3>Question</h3>
+	<p><textarea rows="5" cols="66" id="q"></textarea></p>
+	<h3>Answer</h3>
+	<p><textarea rows="5" cols="66" id="ans"></textarea></p>
+	<p><input type="button" style="background-color:white;border-style: solid;border-color: green;color: green;width:100px;height:50px;"  value="save" id="next" onclick="down()"></p>
+	<p id="ebut"></p>
+</div>
+<table cellpadding="11">
+	<tr id="arrange">
+		
+	</tr>
+</table>
+
+</body>
+</html>
