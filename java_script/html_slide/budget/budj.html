@@ -1,0 +1,171 @@
+<html>
+<head>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+    h1{
+        margin-left: 31px;
+    }
+   
+* {
+  box-sizing: border-box;
+  
+}
+.imm {
+    -ms-flex: 0 0 33.333333%;
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%
+}
+.cal {
+    -ms-flex: 0 0 41.666667%;
+    flex: 0 0 41.666667%;
+    max-width: 41.666667%
+}
+
+.ww {
+    -ms-flex: 0 0 58.333333%;
+    flex: 0 0 58.333333%;
+    max-width: 58.333333%
+}
+  
+.borderg {
+
+   
+    border: 4px solid green;
+    margin:30px;
+    width:75%;
+     
+   }
+
+
+   .borderr{
+
+   
+border: 4px solid red;
+margin:30px;
+width:75%;
+ 
+}
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px
+}
+    
+  
+  .bud{
+      margin-left:17px;
+      margin-top:0px;
+      width:387px;
+      height:30px;
+    
+  border: solid green;
+  border-width: 0px;
+  outline-style: solid;
+  outline-color: green;
+}
+  
+.exp{
+      margin-left:17px;
+      margin-top:0px;
+      width:387px;
+    height:30px;
+
+    
+  border: 0px solid red;
+  outline-style: solid;
+  outline-color: red;
+}
+.pexp{
+      margin-left:17px;
+      margin-top:0px;
+      width:387px;
+     height:30px;
+
+  border: 0px solid red;
+  outline-style: solid;
+  outline-color: red;
+
+}
+
+img {
+    vertical-align:middle;
+    border-style: none;
+    width: 70px;
+    height: 70px;
+}
+button {
+  border-style: solid;
+  border-color: green;
+  color: green;
+  background-color:white;
+  padding: 6px 20px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+}
+ul li {
+  list-style-type: none;  
+}
+</style>
+<body>
+   <h1>BUDGET APP</h1> 
+   <div class="row" width="300px";height="100px">
+    <div class="cal" >
+        <div class="borderg">
+            <p style="margin:17px">Please Enter Your Budget</p>
+            <input type="number" class="bud" id="budget"></input><br>
+            <button type="button" class="btn btn-outline-success" style="margin:17px" onclick="add()">Calculate</button>
+        </div><br>
+        <div class="borderr" >
+            <p style="margin:17px" >Please Enter Your Expense</p>
+            <input type="text" class="exp" id="t"></input>
+            <p style="margin:17px">Please Enter Expense Amount</p>
+            <input type="text" class="pexp"  id="price"></input>
+            <button type="button" class="btn btn-outline-success" style="margin:17px;border-color: red;color: red;" onclick="newElement()">Add Expenses</button>
+        </div>      
+    </div>
+    <div class="ww">
+        <div class="row">
+      <div class="imm">
+        <h2 class="text-center">BUDGET</h2>
+        <img src="b3.jpg"  style="margin-left:0px;">
+       <h1> <p id="b" style="color:green;"> </p></h1>
+      </div>
+      <div class="imm" >
+        <h2 class="text-center" ;>EXPENSES</h2>
+        <img src="b2.jpg"    style="margin-left:0px;">
+        <h1><p id="c" style="color:red;"> </p></h1>
+      </div>
+      <div class="imm">
+        <h2 class="text-center">BALANCE</h2>
+        <img src="b1.jpg"  style="margin-left:0px;">
+        <h1><p id="d" style="color:green;"></p></h1>
+      </div>
+    </div>
+      <div class="row" id="r">
+      <div class="imm">
+          <ul id="et">
+              <li><h4>Expenses Titles</h4> </li>
+              <li></li>
+          </ul>
+      </div>
+      <div class="imm">
+        <ul  id="ea" style="color:red">
+            <li><h4>Expenses Amount</h4> </li>
+            <li></li>
+        </ul>
+    
+  
+</div>
+      </div>
+      </div>
+    </div>
+    <script src="C:\Users\admin\Desktop\ttl\budget\budj.js"></script>
+</body>
+</html>
