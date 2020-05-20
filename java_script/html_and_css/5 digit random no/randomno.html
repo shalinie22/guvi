@@ -1,0 +1,56 @@
+<html>
+    <head></head>
+    <body id="dd">
+       </body>
+    <script>
+        var body=document.getElementById("dd");
+        var button =document.createElement("button");
+        button.setAttribute("style","width: 200px;height: 50px;");
+        button.style.marginLeft="650px";
+        button.innerHTML="Submit";
+        button.addEventListener("click", function ran(){
+    var n=1;
+    while(n!=0){
+    var b=Math.floor(10000 + Math.random() * 90000);
+    var c=[],f=0;
+    c.push(b.toString());
+   
+    var t=c[0].split("")
+    
+    for(var i=0;i<t.length;i++)
+    {
+        for(var j=i+1;j<t.length;j++)
+        {
+            if(t[i]==t[j])
+            {
+                f=1;
+                break;
+                
+            }
+        }
+    }
+    if(f==0)
+    {
+        
+        div.innerHTML=b
+        break;
+    }
+    else
+    {
+        n=b;
+        continue;
+    }
+    }
+    
+});
+        body.appendChild(button);
+        var div=document.createElement("div");
+        div.setAttribute("style","width: 200px;height: 50px; text-align: center;");
+        div.style.marginLeft="650px";
+        //div.innerHTML="Submit";
+        body.appendChild(div)
+        //div.innerHTML="Submit";
+        
+
+    </script>
+</html>
