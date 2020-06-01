@@ -1,5 +1,5 @@
 //2.5 Find the datatype of author age in Nodejs Object.
-//2.3 Insert a new reader in the readers array for Nodejs.
+
 var library=[{
                 "title":"javascript",
                 "price": 500,
