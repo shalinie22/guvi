@@ -1,15 +1,18 @@
 /*1. Convert specifications given below in image to Javascript Object;
 Link :
 https://www.mohanbn.com/wp-content/uploads/2008/11/a-star-tech-specs.jpg*/
-var technical_specifications=[
+//function for the javascript_object
+function javascript_object(){
+  
+    var technical_specifications=[{
                                 "dimensions":{
-                                               "overall_length(mm)":3,500,
-                                               "overall_width(mm)":1,600,
-                                               "overall_height(mm)":1,490,
-                                               "wheelbase(mm)":2,360,
+                                               "overall_length(mm)":3500,
+                                               "overall_width(mm)":1600,
+                                               "overall_height(mm)":1490,
+                                               "wheelbase(mm)":2360,
                                                "track_width":{
-                                                                "front(mm)":1,405,
-                                                                "rear(mm)":1,400
+                                                                "front(mm)":1405,
+                                                                "rear(mm)":1400
                                                             },
                                                "minimum_turning_radius(m)":4.5,
                                                "minimum_ground_clearance(mm)":170
@@ -26,7 +29,7 @@ var technical_specifications=[
                                                 "Number_of_valves":12,
                                                 "Capacity(cc/cm^3)":998,
                                                 "Bore_X_stroke(mm)":"73.0*79.5",
-                                                "Compression_ratio":10:1,
+                                                "Compression_ratio":"10:1",
                                                 "Maximum_power(Ps/rpm)":"67/6,200",
                                                 "Maximum_torque(Nm/rpm)":"90/3,500",
                                                 "fuel_distribution":"multipoint_injection"
@@ -50,6 +53,11 @@ var technical_specifications=[
                                         },
                                 "weights":{
                                             "Kerb weight(min, with full options)(kg)":"860-880",
-                                            "Gross vehicle weight(kg)":1,320
+                                            "Gross vehicle weight(kg)":1320
                                     
-                                }]
+                                }}];
+
+                                
+console.log(technical_specifications);
+}
+javascript_object();
