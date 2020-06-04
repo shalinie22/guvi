@@ -505,13 +505,16 @@ function mergeArrays(ar1, ar2)
 
 /*Calculate the sum of numbers received in a comma delimited string*/
 
-console.log(sumCSV("1.5, 2.3, 3.1, 4, 5.5, 6, 7, 8, 9, 10.9"));
+
+console.log(sumCSV("1.5, 2.3, 3.1, 4, 5.5, 6, 7, 8, 9, 10.9"))
 function sumCSV(s)
 {
-    var ss=[];
+    
+  var ss=[];
     ss.push(s)
-    var splitted=ss[0].split(",")
- //var arr = splitted.map(function(num){return parseInt(num)})
- return splitted.length
-  
+     var splitted=ss[0].split(",")
+    var arr = splitted.map(function(num){return parseFloat(num)})
+    var sum= arr.reduce(function(acc,cu){return acc+cu})
+    return sum
 }
+
