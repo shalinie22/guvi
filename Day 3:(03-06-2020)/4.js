@@ -1,17 +1,16 @@
 //4.1. Print odd numbers in an array
 var array=[1,2,3,4,5,6];
     // odd stores the odd numbers from the array
-	var odd=array.filter((num)=>{return num%2!=0;});
+	var odd=array.filter((num)=>(num%2)!==0);
+	console.log(odd);
 
- 
-console.log(odd);
 
 //4.2. Convert all the strings to title caps in a string array
 
 //Convert all the strings to title caps in a string array
 var sh = ["guvi","geek"];
 // arrow function to convert strings to title caps
-    var caps=sh.map((str)=>{ return str[0].toUpperCase()+str.substr(1)})
+    var caps=sh.map((str)=>(str[0].toUpperCase()+str.substr(1)))
     console.log(caps)
 
 
@@ -20,7 +19,7 @@ var sh = ["guvi","geek"];
 var a=[1,2,3,4,5];
 
     // the total  is stored in the variable sum
-var sum = a.reduce((acc,cu)=>{return acc+cu;});
+var sum = a.reduce((acc,cu)=>( acc+cu));
 console.log(sum);
 
 //4.4. Return all the prime numbers in an array
