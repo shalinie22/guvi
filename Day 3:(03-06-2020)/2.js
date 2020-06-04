@@ -150,3 +150,16 @@ var remove_duplicates=function(a){
 remove_duplicates(array)
 
 
+//2.8. Rotate an array by k times and return the rotated array
+var array =[3,4,5,6,7,8]
+var number_of_rotation=3
+var rotate=function(){
+    for(var i=0;i<number_of_rotation;i++)
+    {
+        var p=array.shift();
+        array.push(p)
+        
+    }
+    return array
+}
+console.log(rotate())
